@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="static/h-ui/css/H-ui.min.css" />
+        <link rel="stylesheet" type="text/css" href="lib/Hui-iconfont/1.0.8/iconfont.min.css" />
+        
+    </head>
+    <body >
+        
+        <div class="panel panel-default mt-20">
+            <div class="panel-header">表格</div>
+            <div class="panel-body">
+                <table id='idData' class="table table-border table-bordered table-striped mt-20">
+                    <thead>
+                        <tr>
+                            <th class="col1">姓名</th>
+                            <th class="col2">顾问id</th>
+                            <th class="col3">地址</th>
+                            <th class="col3">头像</th>
+                            <th class="col3">状态</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {volist name='data' id='vo'}
+                            <tr>
+                                <td class="col2">{$vo.name}</td>
+                                <td class="col2">{$vo.uid}</td>
+                                <td class="col2">{$vo.province}</td>
+                                <td class="col2"><img src='{$vo.name}'></td>
+                                <td class="col2">{$vo.status}</td>
+                            </tr>
+                        {/volist}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div>{$render}</div>
+    </body>
+</html>

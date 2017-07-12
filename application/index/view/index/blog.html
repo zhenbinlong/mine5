@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    </head>
+    <body>
+        <div class="piclist">
+            <ul class="listul">
+            </ul>
+            <div class="fydiv">
+                <ul class="fenye">
+                </ul>
+            </div>
+        </div>
+        <input type='hidden' value='{$data}' id='data'>
+        <script type='text/javascript'>
+            alert($('#data').val());
+            getPage(1);
+            function getPage(pn){
+                var dataCount = $('#data').val();
+            }
+        </script>
+    </body>
+</html>
